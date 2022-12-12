@@ -1,0 +1,36 @@
+<script>
+    //PROBLEMA
+    /*
+    Peça para o usuário informar 10 letras.
+    Verifique se essas letras são vogais ou consoantes. Separe-as em duas listas distintas.
+    Apresente, ao fim do programa, a lista de vogais e a sua respectiva quantidade. Faça o mesmo para as consoantes, apresentando a lista de consoantes e a sua respectiva quantidade.
+    */
+
+    //ENTRADA
+    const letras = prompt("informe 10 letras")
+
+    //PROCESSAMENTO
+for(let index = 1; letras >= index; index++){
+    index = letras + 10
+    let letrasfogais = []
+    let letrasconsoantes = []
+    if (letras === "a"){
+         letrasfogais.push(letras)
+    }else if (letras === "e"){
+         letrasfogais.push(letras)
+    }if (letras === "i"){
+         letrasfogais.push(letras)
+    }if (letras === "0"){
+         letrasfogais.push(letras)
+    }if (letras === "u"){
+        index = letrasfogais.push(letras)
+    }else{
+         letrasconsoantes.push(letras)
+    } 
+    
+}
+
+    //SAÍDA
+document.write(`letras fogais: ${letrasfogais.join(",")} </br>
+${letrasconsoantes.join(",")}`)
+</script>
